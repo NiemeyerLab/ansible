@@ -1,0 +1,27 @@
+##
+# SATA ROOT DECLARATION
+##
+
+root sata {
+  id -1   # do not change unnecessarily
+  # weight 0.000
+  alg straw
+  hash 0  # rjenkins1
+  item ceph-osd2-sata weight 2.000
+  item ceph-osd1-sata weight 2.000
+  item ceph-osd0-sata weight 2.000
+}
+
+##
+# SSD ROOT DECLARATION
+##
+
+root ssd {
+  id -21    # do not change unnecessarily
+  # weight 0.000
+  alg straw
+  hash 0  # rjenkins1
+  item ceph-osd2-ssd weight 2.000
+  item ceph-osd1-ssd weight 2.000
+  item ceph-osd0-ssd weight 2.000
+}
