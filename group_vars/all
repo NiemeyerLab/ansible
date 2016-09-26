@@ -1,0 +1,13 @@
+---
+users:
+  - username: nniemeyer
+    name: Nick Niemeyer
+    groups: [wheel,systemd-journal]
+    uid: 10001
+    ssh_key:
+      - 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDwvKW1mnOUadDsBSJszMSFotW38PseyqQGsQ3z7itncvPCONIeSWlx6UcGmUI/05klYEhddnwmsMZxtVaS6v1y+j0g28jSS3v595cV+GYpmmxigqzUEHPBcM7k1+WXXfpB4YupC9T28Ln8B/MKsKZQt3ICeXr6OFMNNyPl1PIiUVUTj4PUqVHAjyiNHxoZQhWzAoszqIPY78WnI+CFYd7aWkOtrX/GG92e9XTeYKKOQ9lJJ1NogfsDnrOaUbF24f8HYqjfoMr4Etzwbk+Do7mP49y9/OA0/XwI+igf0lFPTTUWZhod7kAFkug/LWIdU69Wf7zoJwI1baA+zODu6rtP nniemeyer@localhost.localdomain' 
+
+users_deleted:
+  - username: bar
+    name: Bar User
+    uid: 1002
