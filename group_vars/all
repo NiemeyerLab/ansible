@@ -1,4 +1,12 @@
 ---
+
+# ssh configuration file
+sshd_port: 22
+sshd_permitrootlogin: yes
+sshd_pubkeyauth: yes
+sshd_passwdauth: yes
+
+
 users:
   - username: nniemeyer
     name: Nick Niemeyer
