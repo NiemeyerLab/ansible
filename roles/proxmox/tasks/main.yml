@@ -1,0 +1,10 @@
+---
+ - name: Configure Network Interfaces
+   copy:
+     src: "{{ansible_hostname}}_interfaces"
+     dest: /etc/network/interfaces
+     owner: root
+     group: root
+     mode: 0644
+   notify:
+     - restart networking
