@@ -8,3 +8,17 @@
      mode: 0644
    notify:
      - restart networking
+ - name: Installation of pip to install pexpect
+   apt:
+     name: python-pip
+     state: latest
+ - name: Install pexpect to smooth the install of pvecph
+   pip:
+     name: pexpect
+     version: 4.2.1
+ - name: Installation of Ceph Packages
+   expect: 
+     command: 'pveceph install -version hammer'
+     responses:
+       'Do you want to continue\? \[Y/n\]': 'Y'
+     echo: yes
